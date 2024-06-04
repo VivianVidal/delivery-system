@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
       <header className="flex justify-between items-center bg-orange-200 h-16 w-full">
         <Image className="pl-12" src="next.svg" width={130} height={150} alt=""/>
         <nav className="flex gap-10 pr-12 text-xl font-medium hover:font-semibold">
@@ -26,6 +26,7 @@ export default function RootLayout({
           <Link href={""}>Endereços</Link>
         </nav>
       </header>
+      {children}
       </body>
     </html>
   );
